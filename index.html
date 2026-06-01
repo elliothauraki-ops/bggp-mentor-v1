@@ -61,7 +61,10 @@ strong{color:var(--text);font-weight:700}
 .hero .sub strong{color:var(--white)}
 .hero .cta-wrap{margin:0 auto;max-width:420px;display:flex;flex-direction:column;gap:10px;align-items:center}
 .hero .cta-meta{font-family:var(--display);font-size:12px;color:var(--muted);letter-spacing:1.6px;text-transform:uppercase;font-weight:600;margin-top:4px}
-.hero .hero-video{max-width:760px;margin:32px auto 24px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;text-align:center}
+.hero .warning{display:inline-block;max-width:760px;margin:20px auto 0;padding:12px 20px;border-radius:60px;border:1px solid rgba(229,93,93,.4);background:rgba(229,93,93,.08);color:var(--text-soft);font-family:var(--display);font-weight:700;font-size:clamp(11px,1.6vw,13.5px);letter-spacing:1.4px;text-transform:uppercase;line-height:1.5}
+.hero .warning .red{color:var(--red)}
+.hero .warning strong{color:var(--white);font-weight:800}
+.hero .hero-video{max-width:760px;margin:24px auto 24px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;text-align:center}
 .hero .hero-video .vlbl{font-family:var(--display);text-transform:uppercase;letter-spacing:3px;font-size:11px;color:var(--gold);margin-bottom:12px;font-weight:700}
 .hero .hero-video .v-aspect{position:relative;width:100%;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000;cursor:pointer}
 .hero .hero-video .v-aspect .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 50%,rgba(242,193,78,.22),transparent 60%)}
@@ -193,6 +196,7 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
 <header class="hero"><div class="wrap">
   <h1>You don't need more information.<br/>You need a <span class="grad">Mentor.</span></h1>
   <p class="sub">A direct mentor partnership. <strong>Watch the breakdown below to see exactly how it works.</strong></p>
+  <p class="warning"><span class="red">⚠ Warning:</span> 99% of people won't make it to the end of this video. <strong>The 1% who do are the ones in the testimonials below.</strong></p>
   <div class="hero-video">
     <div class="vlbl">Tap to play · Sound recommended</div>
     <div class="v-aspect">
