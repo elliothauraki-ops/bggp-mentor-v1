@@ -46,8 +46,13 @@ strong{color:var(--text);font-weight:700}
 .btn.ghost:hover{background:var(--gold-soft);filter:none}
 .btn .arrow{font-weight:900}
 
+/* banner stripe at very top of hero */
+.banner{background:#050505;border-bottom:1px solid var(--line);padding:14px 0;text-align:center}
+.banner .ban-text{font-family:var(--display);font-weight:800;font-size:clamp(11.5px,1.6vw,14px);letter-spacing:1.8px;text-transform:uppercase;color:var(--white);line-height:1.4}
+.banner .ban-text .grad{font-weight:900}
+
 /* hero */
-.hero{position:relative;overflow:hidden;padding:48px 0 56px;text-align:center;background:radial-gradient(ellipse 75% 55% at 50% 18%,rgba(242,193,78,.13),transparent 60%)}
+.hero{position:relative;overflow:hidden;padding:40px 0 56px;text-align:center;background:radial-gradient(ellipse 75% 55% at 50% 18%,rgba(242,193,78,.13),transparent 60%)}
 .hero .prehead{font-family:var(--body);font-style:italic;color:var(--text-soft);font-size:clamp(15px,2vw,18px);line-height:1.55;font-weight:500;max-width:780px;margin:0 auto 28px}
 .hero .prehead strong{color:var(--white);font-style:normal;font-weight:700}
 .hero h1{font-family:var(--display);font-weight:900;letter-spacing:-.4px;line-height:1.04;margin:0 auto;color:var(--white);font-size:clamp(34px,6.5vw,64px);max-width:980px;text-transform:uppercase}
@@ -55,10 +60,15 @@ strong{color:var(--text);font-weight:700}
 .hero .sub strong{color:var(--white)}
 .hero .cta-wrap{margin:0 auto;max-width:420px;display:flex;flex-direction:column;gap:10px;align-items:center}
 .hero .cta-meta{font-family:var(--display);font-size:12px;color:var(--muted);letter-spacing:1.6px;text-transform:uppercase;font-weight:600;margin-top:4px}
-.hero .scroll-cue{display:inline-flex;flex-direction:column;align-items:center;gap:8px;margin-top:36px;color:var(--text-soft);transition:color .15s,transform .15s;animation:bob 2.4s ease-in-out infinite}
-.hero .scroll-cue:hover{color:var(--gold)}
-.hero .scroll-cue .cue-label{font-family:var(--display);text-transform:uppercase;letter-spacing:3px;font-size:11.5px;font-weight:700}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.hero .hero-video{max-width:760px;margin:32px auto 24px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;text-align:center}
+.hero .hero-video .vlbl{font-family:var(--display);text-transform:uppercase;letter-spacing:3px;font-size:11px;color:var(--gold);margin-bottom:12px;font-weight:700}
+.hero .hero-video .v-aspect{position:relative;width:100%;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000;cursor:pointer}
+.hero .hero-video .v-aspect .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 50%,rgba(242,193,78,.22),transparent 60%)}
+.hero .hero-video .v-aspect .play .btn{padding:16px 26px;font-size:14.5px}
+.hero .hero-video .v-note{font-family:var(--body);color:var(--text-soft);font-size:13px;margin:12px 0 0;line-height:1.5}
+.hero .hero-cta{margin-top:8px;max-width:520px;margin-left:auto;margin-right:auto}
+.hero .hero-cta .btn{text-transform:uppercase;letter-spacing:1.2px}
+.hero .hero-cta .meta{font-family:var(--display);font-size:11.5px;color:var(--muted);letter-spacing:1.8px;text-transform:uppercase;font-weight:600;margin-top:10px}
 .hero .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:36px auto 0;max-width:760px}
 .chip-pill{display:inline-flex;align-items:center;font-family:var(--display);font-weight:600;font-size:12.5px;padding:8px 14px;border-radius:60px;background:var(--surface);border:1px solid var(--line);color:var(--text-soft);letter-spacing:.2px}
 .chip-pill.no::before{content:"✕ ";color:var(--red);margin-right:6px;font-weight:800}
@@ -180,30 +190,26 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
   <a class="btn-nav" href="#apply">Apply →</a>
 </div></nav>
 
+<div class="banner"><div class="wrap">
+  <span class="ban-text">Where founders go <span class="grad">when courses stop working.</span></span>
+</div></div>
+
 <header class="hero"><div class="wrap">
   <p class="prehead">If you've already invested into info products, courses, group coaching programs, high end masterminds, attended the workshops and live events… <strong>and you still feel stuck…</strong></p>
   <h1>You don't need more information.<br/>You need a <span class="grad">Mentor.</span></h1>
   <p class="sub">A direct mentor partnership. <strong>Watch the breakdown below to see exactly how it works.</strong></p>
-  <a class="scroll-cue" href="#video" aria-label="Scroll to video">
-    <span class="cue-label">Watch the breakdown</span>
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </a>
-</div></header>
-
-<section class="band" id="video"><div class="wrap">
-  <div class="section-head">
-    <div class="label">Turn up the volume</div>
-    <h2>Watch the <span class="grad">breakdown.</span></h2>
-    <p>The full explanation in my own words. If you're inside the Instagram or Facebook in-app browser and the video struggles to load, keep scrolling — everything you need is below in text.</p>
-  </div>
-  <div class="video-card">
+  <div class="hero-video">
     <div class="vlbl">Tap to play · Sound recommended</div>
     <div class="v-aspect">
       <div class="play"><a class="btn" href="#apply">▶ &nbsp;Watch The Breakdown</a></div>
     </div>
-    <p class="v-note">Video embed goes here — wire to your existing Wistia / YouTube / CF2 player. Lazy-load so it doesn't block the hero.</p>
+    <p class="v-note">Video embed goes here — wire to your existing Wistia / YouTube / CF2 player.</p>
   </div>
-</div></section>
+  <div class="hero-cta">
+    <a class="btn big full" href="#apply">Apply To Work With Elliot <span class="arrow">→</span></a>
+    <div class="meta">90-second application · No card needed</div>
+  </div>
+</div></header>
 
 <section class="dark" id="apply"><div class="wrap">
   <div class="section-head">
