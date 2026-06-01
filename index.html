@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Elliot Hauraki — Business Mentor For Founders Who Are Done Buying Courses</title>
+<meta name="description" content="Direct WhatsApp access to a proven business mentor. A 5-step process, no group calls, no modules. A partnership for the next 12 weeks to 12 months." />
+<meta property="og:title" content="You don't need more info. You need a mentor." />
+<meta property="og:description" content="A business mentor for founders who've bought the courses, the masterminds, and are still stuck. Apply to work with Elliot." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0A0A; --bg-soft:#101010; --surface:#141414; --surface-2:#1A1A1A; --line:#262626; --line-soft:#1F1F1F;
+  --gold:#F2C14E; --gold-bright:#FFD86A; --gold-deep:#E5942A; --gold-soft:rgba(242,193,78,.12);
+  --white:#FFFFFF; --text:#EFEAE0; --text-soft:#B8B2A4; --muted:#7C7669;
+  --green:#5BC98C; --red:#E55D5D;
+  --display:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --body:'Quicksand','Inter',sans-serif;
+  --gold-gradient:linear-gradient(45deg,var(--gold-bright) 0%,var(--gold) 50%,var(--gold-deep) 100%);
+}
+*{box-sizing:border-box;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.6;font-weight:500}
+a{color:var(--gold);text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+strong{color:var(--text);font-weight:700}
+.grad{background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;color:var(--white);font-size:16px;letter-spacing:-.3px}
+.logo .mark{width:28px;height:28px;border-radius:8px;background:var(--gold-gradient);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:900;color:#0E0A02;font-size:13px}
+.nav .btn-nav{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:60px;background:var(--gold-gradient);color:#0E0A02;font-family:var(--display);font-weight:800;font-size:13.5px;border:0;cursor:pointer;text-transform:none}
+
+/* primary button */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:18px 32px;border-radius:60px;background:var(--gold-gradient);color:#0E0A02;font-family:var(--display);font-weight:800;font-size:16.5px;letter-spacing:.1px;border:0;cursor:pointer;transition:transform .12s,box-shadow .12s,filter .12s;box-shadow:0 8px 24px rgba(242,193,78,.18),inset 0 -2px 0 rgba(0,0,0,.1);text-align:center}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.btn.big{font-size:18px;padding:22px 40px;width:auto}
+.btn.full{display:flex;width:100%}
+.btn.ghost{background:transparent;border:1px solid rgba(242,193,78,.6);color:var(--gold);box-shadow:none}
+.btn.ghost:hover{background:var(--gold-soft);filter:none}
+.btn .arrow{font-weight:900}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:48px 0 56px;text-align:center;background:radial-gradient(ellipse 75% 55% at 50% 18%,rgba(242,193,78,.13),transparent 60%)}
+.hero .eyebrow{font-family:var(--display);font-weight:600;letter-spacing:4px;color:var(--gold);font-size:11.5px;text-transform:uppercase;margin:0 auto 22px;display:inline-block;padding:8px 16px;border-radius:60px;background:var(--gold-soft);border:1px solid rgba(242,193,78,.3)}
+.hero h1{font-family:var(--display);font-weight:900;letter-spacing:-1.5px;line-height:1.04;margin:0 auto;color:var(--white);font-size:clamp(38px,7vw,68px);max-width:920px}
+.hero .sub{font-size:17.5px;color:var(--text-soft);margin:24px auto 32px;max-width:640px;line-height:1.55;font-weight:500}
+.hero .sub strong{color:var(--white)}
+.hero .cta-wrap{margin:0 auto;max-width:420px;display:flex;flex-direction:column;gap:10px;align-items:center}
+.hero .cta-meta{font-family:var(--display);font-size:12px;color:var(--muted);letter-spacing:1.6px;text-transform:uppercase;font-weight:600;margin-top:4px}
+.hero .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:36px auto 0;max-width:760px}
+.chip-pill{display:inline-flex;align-items:center;font-family:var(--display);font-weight:600;font-size:12.5px;padding:8px 14px;border-radius:60px;background:var(--surface);border:1px solid var(--line);color:var(--text-soft);letter-spacing:.2px}
+.chip-pill.no::before{content:"✕ ";color:var(--red);margin-right:6px;font-weight:800}
+.chip-pill.yes{background:var(--gold-gradient);color:#0E0A02;border-color:transparent;font-weight:800}
+.chip-pill.yes::before{content:"★ ";margin-right:4px}
+
+/* sections */
+section{padding:72px 0;position:relative}
+section.band{background:var(--bg-soft)}
+section.dark{background:#070707}
+.section-head{text-align:center;max-width:720px;margin:0 auto 44px}
+.section-head .label{font-family:var(--display);text-transform:uppercase;letter-spacing:4px;font-size:11.5px;color:var(--gold);margin-bottom:14px;font-weight:700}
+.section-head h2{font-family:var(--display);font-weight:900;letter-spacing:-1px;line-height:1.1;margin:0 auto 14px;color:var(--white);font-size:clamp(28px,4.2vw,46px)}
+.section-head p{font-size:17px;color:var(--text-soft);max-width:620px;margin:0 auto;line-height:1.6}
+
+/* counter row */
+.counter{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:32px auto 0;max-width:760px}
+.counter .ct{text-align:center;padding:18px 12px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.counter .ct .n{font-family:var(--display);font-weight:900;font-size:30px;background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;letter-spacing:-.5px}
+.counter .ct .l{font-family:var(--display);font-size:11.5px;text-transform:uppercase;letter-spacing:1.8px;color:var(--muted);margin-top:6px;font-weight:600}
+@media (max-width:520px){.counter{grid-template-columns:repeat(3,1fr);gap:8px}.counter .ct{padding:14px 6px}.counter .ct .n{font-size:22px}.counter .ct .l{font-size:9.5px;letter-spacing:1.2px}}
+
+/* video (optional, lazy) */
+.video-card{max-width:760px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center}
+.video-card .vlbl{font-family:var(--display);text-transform:uppercase;letter-spacing:3px;font-size:11.5px;color:var(--gold);margin-bottom:14px;font-weight:700}
+.video-card .v-aspect{position:relative;width:100%;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000;cursor:pointer}
+.video-card .v-aspect .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 50%,rgba(242,193,78,.2),transparent 60%)}
+.video-card .v-aspect .play .btn{padding:18px 28px;font-size:15px}
+.video-card .v-note{font-family:var(--body);color:var(--text-soft);font-size:14.5px;margin:14px 0 0;line-height:1.5}
+
+/* mentor block */
+.mentor{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:36px;max-width:820px;margin:0 auto}
+.mentor h3{font-family:var(--display);font-weight:800;font-size:24px;color:var(--white);margin:0 0 16px;letter-spacing:-.4px}
+.mentor p{margin:0 0 14px;color:var(--text-soft);font-size:16.5px;line-height:1.6}
+.mentor p.lead{color:var(--white);font-size:19px;font-weight:600;line-height:1.45}
+.mentor .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.mentor .meta .m{font-family:var(--display);font-size:12px;letter-spacing:.4px;padding:6px 12px;border-radius:60px;background:var(--gold-soft);color:var(--gold);font-weight:700;border:1px solid rgba(242,193,78,.3)}
+
+/* 5-step process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;max-width:1000px;margin:0 auto}
+@media (max-width:880px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px 20px;position:relative;text-align:center}
+.step .ord{position:absolute;top:14px;right:18px;font-family:var(--display);font-weight:900;font-size:34px;background:var(--gold-gradient);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;opacity:.5}
+.step .num-lbl{font-family:var(--display);text-transform:uppercase;letter-spacing:2px;font-size:11px;color:var(--gold);margin-top:8px;font-weight:700}
+.step h4{font-family:var(--display);font-weight:800;font-size:22px;color:var(--white);margin:6px 0 10px;letter-spacing:-.3px}
+.step p{font-size:14px;color:var(--text-soft);margin:0;line-height:1.5}
+
+/* testimonials */
+.proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:1000px;margin:0 auto}
+@media (max-width:780px){.proof-grid{grid-template-columns:1fr}}
+.proof{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;border-left:3px solid var(--gold)}
+.proof blockquote{margin:0;color:var(--white);font-family:var(--body);font-style:italic;font-size:16px;line-height:1.55;font-weight:500}
+.proof .who{display:flex;align-items:center;gap:12px;margin-top:16px}
+.proof .who .pic{width:42px;height:42px;border-radius:50%;background:var(--gold-gradient);color:#0E0A02;font-family:var(--display);font-weight:900;font-size:16px;display:flex;align-items:center;justify-content:center;flex:0 0 42px}
+.proof .who .name{font-family:var(--display);font-weight:800;color:var(--white);font-size:14.5px}
+.proof .who .role{font-family:var(--body);color:var(--muted);font-size:13px;font-weight:500}
+
+/* who this is/isn't for */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:980px;margin:0 auto}
+@media (max-width:780px){.split{grid-template-columns:1fr}}
+.col{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:32px}
+.col.yes{border-top:4px solid var(--green)}
+.col.no{border-top:4px solid var(--red)}
+.col .tag{display:inline-block;font-family:var(--display);font-size:11px;letter-spacing:2px;padding:4px 12px;border-radius:60px;font-weight:800;margin-bottom:14px}
+.col.yes .tag{background:rgba(91,201,140,.13);color:var(--green)}
+.col.no .tag{background:rgba(229,93,93,.13);color:var(--red)}
+.col h3{font-family:var(--display);font-weight:800;font-size:22px;color:var(--white);margin:0 0 14px;letter-spacing:-.3px}
+.col ul{margin:0;padding:0;list-style:none}
+.col li{padding:10px 0;border-bottom:1px solid var(--line-soft);color:var(--text-soft);font-size:15.5px;line-height:1.5;display:flex;gap:10px}
+.col li:last-child{border-bottom:0}
+.col.yes li::before{content:"✓";color:var(--green);font-weight:900;flex:0 0 16px}
+.col.no li::before{content:"✕";color:var(--red);font-weight:900;flex:0 0 16px}
+
+/* FAQ */
+.faq{max-width:780px;margin:0 auto}
+.qa{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.qa summary{padding:22px 24px;cursor:pointer;font-family:var(--display);font-weight:700;font-size:17px;color:var(--white);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px;letter-spacing:-.2px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font-size:24px;color:var(--gold);font-weight:600;transition:transform .15s}
+.qa[open] summary::after{content:"−"}
+.qa .a{padding:0 24px 22px;color:var(--text-soft);font-size:15.5px;line-height:1.6}
+.qa .a p{margin:0 0 12px}
+.qa .a p:last-child{margin:0}
+
+/* application form */
+.apply-card{max-width:680px;margin:0 auto;background:var(--surface);border:1px solid rgba(242,193,78,.4);border-radius:20px;padding:40px;box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 0 1px rgba(242,193,78,.1)}
+.apply-card .lbl{font-family:var(--display);text-transform:uppercase;letter-spacing:3px;font-size:11.5px;color:var(--gold);margin-bottom:14px;font-weight:700}
+.apply-card h3{font-family:var(--display);font-weight:800;font-size:28px;color:var(--white);margin:0 0 8px;letter-spacing:-.5px;line-height:1.15}
+.apply-card .note{font-family:var(--body);color:var(--text-soft);font-size:15px;margin:0 0 28px;line-height:1.55}
+.apply-card form{display:flex;flex-direction:column;gap:14px}
+.apply-card label{font-family:var(--display);font-size:13px;text-transform:uppercase;letter-spacing:1.6px;color:var(--text-soft);font-weight:600;margin-bottom:6px;display:block}
+.apply-card input,.apply-card textarea,.apply-card select{width:100%;padding:14px 16px;background:#0A0A0A;border:1px solid var(--line);border-radius:10px;color:var(--white);font-family:var(--body);font-size:16px;font-weight:500;-webkit-appearance:none;appearance:none}
+.apply-card input:focus,.apply-card textarea:focus,.apply-card select:focus{outline:none;border-color:var(--gold)}
+.apply-card textarea{min-height:96px;resize:vertical;font-family:var(--body)}
+.apply-card .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:540px){.apply-card{padding:30px 24px}.apply-card .row2{grid-template-columns:1fr}}
+.apply-card .small{font-family:var(--body);font-size:13px;color:var(--muted);margin-top:8px;text-align:center;line-height:1.5}
+
+/* final cta strip */
+.final{text-align:center;max-width:680px;margin:0 auto}
+.final h2{font-family:var(--display);font-weight:900;font-size:clamp(28px,4vw,40px);color:var(--white);margin:0 0 16px;line-height:1.1;letter-spacing:-.8px}
+.final p{color:var(--text-soft);font-size:17px;margin:0 0 28px;line-height:1.55}
+.final .duo{display:flex;flex-direction:column;gap:10px;max-width:380px;margin:0 auto}
+.final .meta{font-family:var(--display);font-size:11.5px;color:var(--muted);letter-spacing:1.8px;text-transform:uppercase;font-weight:600;margin-top:6px}
+
+/* footer */
+footer{padding:40px 0;text-align:center;background:#050505;border-top:1px solid var(--line-soft)}
+footer .links{margin:14px 0 10px}
+footer .links a{color:var(--muted);font-family:var(--display);font-size:13px;margin:0 14px;font-weight:500}
+footer .disc{color:var(--muted);font-size:12px;line-height:1.55;max-width:760px;margin:14px auto 0;padding:0 16px}
+footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(--display);letter-spacing:.5px}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap row">
+  <div class="logo"><span class="mark">EH</span>Elliot Hauraki</div>
+  <a class="btn-nav" href="#apply">Apply →</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="eyebrow">BUSINESS MENTOR &nbsp;•&nbsp; 100+ FOUNDERS &nbsp;•&nbsp; 12+ COUNTRIES</span>
+  <h1>You don't need more info. You need <span class="grad">a mentor.</span></h1>
+  <p class="sub">For founders who've bought the courses, the masterminds, the group programs — and still aren't where they want to be. <strong>Direct WhatsApp access. A proven 5-step process. A partner in your corner for the next 12 weeks to 12 months.</strong></p>
+  <div class="cta-wrap">
+    <a class="btn big full" href="#apply">Apply to work with Elliot <span class="arrow">→</span></a>
+    <span class="cta-meta">Quick application · No card needed</span>
+  </div>
+  <div class="chips">
+    <span class="chip-pill no">Not a course</span>
+    <span class="chip-pill no">Not a group program</span>
+    <span class="chip-pill no">Not a 1-on-1 coaching package</span>
+    <span class="chip-pill yes">A mentor partnership</span>
+  </div>
+  <div class="counter">
+    <div class="ct"><div class="n">100+</div><div class="l">Founders Mentored</div></div>
+    <div class="ct"><div class="n">12+</div><div class="l">Countries</div></div>
+    <div class="ct"><div class="n">12wk–12mo</div><div class="l">Typical Length</div></div>
+  </div>
+</div></header>
+
+<section class="band" id="video"><div class="wrap">
+  <div class="section-head">
+    <div class="label">Want the longer version?</div>
+    <h2>Watch the <span class="grad">5-minute breakdown.</span></h2>
+    <p>The full explanation, in my own words. If your connection is slow or you're inside the Instagram or Facebook in-app browser, keep scrolling — everything you need is below in text.</p>
+  </div>
+  <div class="video-card">
+    <div class="vlbl">Tap to play · Sound recommended</div>
+    <div class="v-aspect">
+      <div class="play"><a class="btn" href="#apply">▶ &nbsp;Watch The Breakdown</a></div>
+    </div>
+    <p class="v-note">Video embed goes here — wire to your existing Wistia / YouTube / CF2 player. Lazy-load so it doesn't block the hero.</p>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="section-head">
+    <div class="label">How we work together</div>
+    <h2>This isn't a coaching program. <span class="grad">It's a mentor partnership.</span></h2>
+  </div>
+  <div class="mentor">
+    <p class="lead">There are no modules to watch. No curriculum to consume. No group calls to attend.</p>
+    <p>The traditional definition of coaching doesn't really apply here. Frankly, the term has become more associated with e-learning than with what genuine mentorship actually is.</p>
+    <p>I believe <strong>leadership</strong> is a better word. Real leadership means knowing when to counsel, when to train, when to coach, and when to mentor. Those are four different things that require four different approaches, and the skill is knowing which one a person needs at any given moment.</p>
+    <p>Think of this as a <strong>partnership</strong>. You go through a proven 5-step process. I am the person making sure you complete it, holding you to the highest standard, and providing you with the tools, resources, and access to my network when needed.</p>
+    <p>The difference between this and everything else you've probably tried is simple. <strong>You don't move forward until you've implemented.</strong> Knowledge without implementation gets you nowhere. This is about execution.</p>
+    <div class="meta">
+      <span class="m">Direct WhatsApp access</span>
+      <span class="m">Calendar access</span>
+      <span class="m">No middleman</span>
+      <span class="m">No group calls</span>
+      <span class="m">No modules</span>
+    </div>
+  </div>
+</div></section>
+
+<section class="band" id="process"><div class="wrap">
+  <div class="section-head">
+    <div class="label">The 5-step process</div>
+    <h2>The same process <span class="grad">every founder runs.</span></h2>
+    <p>The process is the formula. It works for anyone who works it. You don't move to the next step until you've completed the one in front of you.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="ord">01</div><div class="num-lbl">Step 01</div><h4>Mindset</h4><p>Identify the beliefs, defaults, and decisions that have kept you stuck. Rebuild them.</p></div>
+    <div class="step"><div class="ord">02</div><div class="num-lbl">Step 02</div><h4>Foundation</h4><p>Niche, offer, brand, proof. The foundational layer every scalable business runs on.</p></div>
+    <div class="step"><div class="ord">03</div><div class="num-lbl">Step 03</div><h4>Sales</h4><p>The conversion process that turns attention into customers — a system, not a guess.</p></div>
+    <div class="step"><div class="ord">04</div><div class="num-lbl">Step 04</div><h4>Traffic</h4><p>The right people, at the right cost, on demand. Built around your unit economics.</p></div>
+    <div class="step"><div class="ord">05</div><div class="num-lbl">Step 05</div><h4>Systems</h4><p>The operating layer that lets the business run without you holding it together.</p></div>
+  </div>
+</div></section>
+
+<section id="proof"><div class="wrap">
+  <div class="section-head">
+    <div class="label">Client results</div>
+    <h2>What founders say <span class="grad">after we work together.</span></h2>
+    <p>Curated quotes from clients across industries — coaches, consultants, agency owners, local services, real estate, online courses.</p>
+  </div>
+  <div class="proof-grid">
+    <div class="proof"><blockquote>"Replace this quote with the exact words from a real client. Lean into the words they used about feeling stuck before, and the specific shift after."</blockquote><div class="who"><div class="pic">JD</div><div><div class="name">[Client Name]</div><div class="role">[Industry · Country]</div></div></div></div>
+    <div class="proof"><blockquote>"Replace this quote with a real testimonial. Keep one quote per card. Specific outcomes outperform generic praise — pull the most concrete language they used."</blockquote><div class="who"><div class="pic">KM</div><div><div class="name">[Client Name]</div><div class="role">[Industry · Country]</div></div></div></div>
+    <div class="proof"><blockquote>"Replace this quote with one focused on the mentor / partnership feel — the relationship aspect that differentiates you from a course."</blockquote><div class="who"><div class="pic">SR</div><div><div class="name">[Client Name]</div><div class="role">[Industry · Country]</div></div></div></div>
+    <div class="proof"><blockquote>"Replace this quote with one that handles the 'I've tried everything before' objection — a client who'd done courses / programs first."</blockquote><div class="who"><div class="pic">AN</div><div><div class="name">[Client Name]</div><div class="role">[Industry · Country]</div></div></div></div>
+    <div class="proof"><blockquote>"Replace this quote with one focused on speed — how fast a specific shift happened once they started actually executing."</blockquote><div class="who"><div class="pic">PL</div><div><div class="name">[Client Name]</div><div class="role">[Industry · Country]</div></div></div></div>
+    <div class="proof"><blockquote>"Replace this quote with one focused on long-term — a client who's stayed multiple years. Anchors the 'partner not product' positioning."</blockquote><div class="who"><div class="pic">RT</div><div><div class="name">[Client Name]</div><div class="role">[Industry · Country]</div></div></div></div>
+  </div>
+</div></section>
+
+<section class="band" id="fit"><div class="wrap">
+  <div class="section-head">
+    <div class="label">Honest fit check</div>
+    <h2>Who this <span class="grad">is and isn't for.</span></h2>
+    <p>This works for 100% of the people who do 100% of the work. The only variable that has ever prevented results is the person. Read both lists before you apply.</p>
+  </div>
+  <div class="split">
+    <div class="col yes">
+      <span class="tag">This is for you if</span>
+      <h3>Serious founders who do what they say</h3>
+      <ul>
+        <li>You hold yourself accountable without needing chasing.</li>
+        <li>You take direction from a trusted advisor and act on it.</li>
+        <li>You've already invested in info — and you're done buying more.</li>
+        <li>You want someone in your corner for the long arc, not a transaction.</li>
+        <li>You'd rather have a partner than a course library.</li>
+        <li>You're willing to be told the truth, even when it's uncomfortable.</li>
+      </ul>
+    </div>
+    <div class="col no">
+      <span class="tag">This is NOT for you if</span>
+      <h3>You'd rather collect knowledge than implement</h3>
+      <ul>
+        <li>You laugh off direction or argue with trusted advisors.</li>
+        <li>You're an information addict who loves learning but avoids action.</li>
+        <li>You need someone to hold your hand or motivate you to do the basics.</li>
+        <li>You're shopping for the cheapest option, not the right one.</li>
+        <li>You expect a coach to fix problems you won't take responsibility for.</li>
+        <li>You're combative, non-compliant, or chronically distracted.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="section-head">
+    <div class="label">Frequently asked</div>
+    <h2>The four questions <span class="grad">that matter.</span></h2>
+  </div>
+  <div class="faq">
+    <details class="qa">
+      <summary>So is this a coaching program or a course?</summary>
+      <div class="a">
+        <p>Neither. There are no modules to watch, no curriculum to consume, and no group calls to attend. While there is coaching involved, the traditional definition of coaching doesn't really apply here.</p>
+        <p>I believe leadership is a better word. Real leadership means knowing when to counsel, when to train, when to coach, and when to mentor. Think of this more as a partnership. You go through a proven process and I am the person making sure you complete it.</p>
+        <p>The difference between this and everything else you've probably tried is simple. <strong>You don't move forward until you've implemented.</strong> Knowledge without implementation gets you nowhere. This is about execution.</p>
+      </div>
+    </details>
+    <details class="qa">
+      <summary>What's the investment?</summary>
+      <div class="a">
+        <p>That's a conversation we have together once we've established that we're a good fit. But I'll say this. The people who lead with that question are often the same people still asking it five years from now.</p>
+        <p>High-level founders don't think about investment the way employees do. They think about return. They think about allocation of resources. They think about risk and what it costs them to stay exactly where they are.</p>
+        <p>Every single person who has worked with me and done the work has made their investment back and then some. There are multiple options available — the right person always finds a way.</p>
+      </div>
+    </details>
+    <details class="qa">
+      <summary>How long do clients typically work with you?</summary>
+      <div class="a">
+        <p>Anywhere from 12 weeks to multiple years. I have clients who have been with me for three, four, five years and beyond. Those are the people I'm ultimately looking for. Not someone who wants a quick fix and disappears — someone who understands that building something real takes time.</p>
+        <p>It's non-exclusive. You can still be part of other masterminds, other groups, other communities. What it means is that you have someone in your corner who knows your business, knows your history, and is consistently invested in your growth over the long term.</p>
+      </div>
+    </details>
+    <details class="qa">
+      <summary>What kind of support do I actually get?</summary>
+      <div class="a">
+        <p>Direct access on WhatsApp. Complete access to my calendar. When something comes up, we deal with it. There's no middleman, no ticketing system, no waiting.</p>
+        <p>How often we talk is entirely up to you and where you're at. Some clients are in my WhatsApp consistently. Others surface every few weeks or months with something specific to work through. Both are fine.</p>
+        <p>The goal was never for you to need me forever. It was always to make you someone who doesn't.</p>
+      </div>
+    </details>
+  </div>
+</div></section>
+
+<section class="dark" id="apply"><div class="wrap">
+  <div class="section-head">
+    <div class="label">Apply to work with Elliot</div>
+    <h2>Tell me about your <span class="grad">business.</span></h2>
+    <p>If we end up speaking, I want to skip the surface and get straight to what matters most for you. The application takes 90 seconds. I read every one personally.</p>
+  </div>
+  <div class="apply-card">
+    <div class="lbl">Application</div>
+    <h3>Quick application · 90 seconds</h3>
+    <p class="note">Firm policy: I do not sell on the first call. The first call exists to discover whether we like each other and whether I genuinely believe I can help you. Only then do we talk business.</p>
+
+    <!-- TODO: replace form action with your CF2 form endpoint / Typeform redirect / OnceHub booking URL. Fields below mirror what's typically captured to qualify for the call. -->
+    <form action="https://www.businessgrowthgameplan.com/offer#scroll-id-6Z-dDvQ6L-2" method="get">
+      <div class="row2">
+        <div><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+      </div>
+      <div class="row2">
+        <div><label for="phone">Phone (with country code)</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+61…" required /></div>
+        <div><label for="country">Country</label><input id="country" name="country" type="text" autocomplete="country-name" required /></div>
+      </div>
+      <div><label for="business">What kind of business do you run?</label><input id="business" name="business" type="text" placeholder="Industry, what you sell, who you sell to" required /></div>
+      <div><label for="revenue">Current monthly revenue (USD)</label>
+        <select id="revenue" name="revenue" required>
+          <option value="">Choose one…</option>
+          <option>Pre-revenue</option>
+          <option>$1 – $10,000</option>
+          <option>$10,000 – $30,000</option>
+          <option>$30,000 – $100,000</option>
+          <option>$100,000+</option>
+        </select>
+      </div>
+      <div><label for="goal">What's the one outcome you want over the next 12 months?</label><textarea id="goal" name="goal" required></textarea></div>
+      <div><label for="why">Why now?</label><textarea id="why" name="why" required></textarea></div>
+      <button type="submit" class="btn big full">Submit application <span class="arrow">→</span></button>
+      <p class="small">Your information is private. I personally read every application. You'll hear back within 1–2 business days if there's a fit.</p>
+    </form>
+  </div>
+</div></section>
+
+<section class="band" id="final"><div class="wrap">
+  <div class="final">
+    <h2>Got a question before you apply?</h2>
+    <p>Message me on WhatsApp directly. No funnel, no autoresponder, no team — just me.</p>
+    <div class="duo">
+      <a class="btn ghost full" href="https://wa.me/61489041063">Message Elliot on WhatsApp</a>
+      <a class="btn big full" href="#apply">Apply to work with Elliot <span class="arrow">→</span></a>
+      <span class="meta">Same destination. Two different doors.</span>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo" style="justify-content:center"><span class="mark">EH</span>Elliot Hauraki</div>
+    <div class="links">
+      <a href="https://www.businessgrowthgameplan.com/privacy-policy">Privacy</a>
+      <a href="https://www.businessgrowthgameplan.com/terms-of-service">Terms</a>
+      <a href="https://wa.me/61489041063">WhatsApp</a>
+    </div>
+    <p class="disc">Results are not typical. Your results will vary and depend on many factors including but not limited to your background, experience, and work ethic. All business entails risk, regular and consistent effort, and action. Nothing on this page is a promise or guarantee of results or future earnings. You alone are responsible for your decisions, actions, and results.</p>
+    <p class="disc">NOT FACEBOOK: This site is not part of the Facebook™ website or Meta Platforms, Inc., and is not endorsed by Meta in any way.</p>
+    <p class="copy">© Elliot Hauraki. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
