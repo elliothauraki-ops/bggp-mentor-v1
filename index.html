@@ -49,7 +49,7 @@ strong{color:var(--text);font-weight:700}
 /* hero */
 .hero{position:relative;overflow:hidden;padding:48px 0 56px;text-align:center;background:radial-gradient(ellipse 75% 55% at 50% 18%,rgba(242,193,78,.13),transparent 60%)}
 .hero .eyebrow{font-family:var(--display);font-weight:600;letter-spacing:4px;color:var(--gold);font-size:11.5px;text-transform:uppercase;margin:0 auto 22px;display:inline-block;padding:8px 16px;border-radius:60px;background:var(--gold-soft);border:1px solid rgba(242,193,78,.3)}
-.hero h1{font-family:var(--display);font-weight:900;letter-spacing:-1.5px;line-height:1.04;margin:0 auto;color:var(--white);font-size:clamp(38px,7vw,68px);max-width:920px}
+.hero h1{font-family:var(--display);font-weight:900;letter-spacing:-.4px;line-height:1.04;margin:0 auto;color:var(--white);font-size:clamp(34px,6.5vw,64px);max-width:980px;text-transform:uppercase}
 .hero .sub{font-size:17.5px;color:var(--text-soft);margin:24px auto 32px;max-width:640px;line-height:1.55;font-weight:500}
 .hero .sub strong{color:var(--white)}
 .hero .cta-wrap{margin:0 auto;max-width:420px;display:flex;flex-direction:column;gap:10px;align-items:center}
@@ -198,9 +198,9 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
 
 <section class="band" id="video"><div class="wrap">
   <div class="section-head">
-    <div class="label">Want the longer version?</div>
-    <h2>Watch the <span class="grad">5-minute breakdown.</span></h2>
-    <p>The full explanation, in my own words. If your connection is slow or you're inside the Instagram or Facebook in-app browser, keep scrolling — everything you need is below in text.</p>
+    <div class="label">Turn up the volume</div>
+    <h2>Watch the <span class="grad">breakdown.</span></h2>
+    <p>The full explanation in my own words. If you're inside the Instagram or Facebook in-app browser and the video struggles to load, keep scrolling — everything you need is below in text.</p>
   </div>
   <div class="video-card">
     <div class="vlbl">Tap to play · Sound recommended</div>
@@ -211,7 +211,47 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
   </div>
 </div></section>
 
-<section id="how"><div class="wrap">
+<section class="dark" id="apply"><div class="wrap">
+  <div class="section-head">
+    <div class="label">Next step · Answer a few questions</div>
+    <h2>Tell me about your <span class="grad">business.</span></h2>
+    <p>So when we speak, I can skip the surface and get straight to what matters most for you. Takes 90 seconds. I read every one personally.</p>
+  </div>
+  <div class="apply-card">
+    <div class="lbl">Application</div>
+    <h3>Quick application · 90 seconds</h3>
+    <p class="note">Firm policy: I do not sell on the first call. The first call exists to discover whether we like each other and whether I genuinely believe I can help you. Only then do we talk business.</p>
+
+    <!-- TODO: replace form action with your CF2 form endpoint / Typeform redirect / OnceHub booking URL. Fields below mirror what's typically captured to qualify for the call. -->
+    <form action="https://www.businessgrowthgameplan.com/offer#scroll-id-6Z-dDvQ6L-2" method="get">
+      <div class="row2">
+        <div><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+      </div>
+      <div class="row2">
+        <div><label for="phone">Phone (with country code)</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+61…" required /></div>
+        <div><label for="country">Country</label><input id="country" name="country" type="text" autocomplete="country-name" required /></div>
+      </div>
+      <div><label for="business">What kind of business do you run?</label><input id="business" name="business" type="text" placeholder="Industry, what you sell, who you sell to" required /></div>
+      <div><label for="revenue">Current monthly revenue (USD)</label>
+        <select id="revenue" name="revenue" required>
+          <option value="">Choose one…</option>
+          <option>Pre-revenue</option>
+          <option>$1 – $10,000</option>
+          <option>$10,000 – $30,000</option>
+          <option>$30,000 – $100,000</option>
+          <option>$100,000+</option>
+        </select>
+      </div>
+      <div><label for="goal">What's the one outcome you want over the next 12 months?</label><textarea id="goal" name="goal" required></textarea></div>
+      <div><label for="why">Why now?</label><textarea id="why" name="why" required></textarea></div>
+      <button type="submit" class="btn big full">Submit application <span class="arrow">→</span></button>
+      <p class="small">Your information is private. I personally read every application. You'll hear back within 1–2 business days if there's a fit.</p>
+    </form>
+  </div>
+</div></section>
+
+<section class="band" id="how"><div class="wrap">
   <div class="section-head">
     <div class="label">How we work together</div>
     <h2>This isn't a coaching program. <span class="grad">It's a mentor partnership.</span></h2>
@@ -232,7 +272,7 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
   </div>
 </div></section>
 
-<section class="band" id="process"><div class="wrap">
+<section id="process"><div class="wrap">
   <div class="section-head">
     <div class="label">The 5-step process</div>
     <h2>The same process <span class="grad">every founder runs.</span></h2>
@@ -247,7 +287,7 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
   </div>
 </div></section>
 
-<section id="proof"><div class="wrap">
+<section class="band" id="proof"><div class="wrap">
   <div class="section-head">
     <div class="label">Client results</div>
     <h2>What founders say <span class="grad">after we work together.</span></h2>
@@ -263,7 +303,7 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
   </div>
 </div></section>
 
-<section class="band" id="fit"><div class="wrap">
+<section id="fit"><div class="wrap">
   <div class="section-head">
     <div class="label">Honest fit check</div>
     <h2>Who this <span class="grad">is and isn't for.</span></h2>
@@ -297,7 +337,7 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
   </div>
 </div></section>
 
-<section id="faq"><div class="wrap">
+<section class="band" id="faq"><div class="wrap">
   <div class="section-head">
     <div class="label">Frequently asked</div>
     <h2>The four questions <span class="grad">that matter.</span></h2>
@@ -337,47 +377,7 @@ footer .copy{color:var(--muted);font-size:12px;margin-top:14px;font-family:var(-
   </div>
 </div></section>
 
-<section class="dark" id="apply"><div class="wrap">
-  <div class="section-head">
-    <div class="label">Apply to work with Elliot</div>
-    <h2>Tell me about your <span class="grad">business.</span></h2>
-    <p>If we end up speaking, I want to skip the surface and get straight to what matters most for you. The application takes 90 seconds. I read every one personally.</p>
-  </div>
-  <div class="apply-card">
-    <div class="lbl">Application</div>
-    <h3>Quick application · 90 seconds</h3>
-    <p class="note">Firm policy: I do not sell on the first call. The first call exists to discover whether we like each other and whether I genuinely believe I can help you. Only then do we talk business.</p>
-
-    <!-- TODO: replace form action with your CF2 form endpoint / Typeform redirect / OnceHub booking URL. Fields below mirror what's typically captured to qualify for the call. -->
-    <form action="https://www.businessgrowthgameplan.com/offer#scroll-id-6Z-dDvQ6L-2" method="get">
-      <div class="row2">
-        <div><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
-        <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
-      </div>
-      <div class="row2">
-        <div><label for="phone">Phone (with country code)</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+61…" required /></div>
-        <div><label for="country">Country</label><input id="country" name="country" type="text" autocomplete="country-name" required /></div>
-      </div>
-      <div><label for="business">What kind of business do you run?</label><input id="business" name="business" type="text" placeholder="Industry, what you sell, who you sell to" required /></div>
-      <div><label for="revenue">Current monthly revenue (USD)</label>
-        <select id="revenue" name="revenue" required>
-          <option value="">Choose one…</option>
-          <option>Pre-revenue</option>
-          <option>$1 – $10,000</option>
-          <option>$10,000 – $30,000</option>
-          <option>$30,000 – $100,000</option>
-          <option>$100,000+</option>
-        </select>
-      </div>
-      <div><label for="goal">What's the one outcome you want over the next 12 months?</label><textarea id="goal" name="goal" required></textarea></div>
-      <div><label for="why">Why now?</label><textarea id="why" name="why" required></textarea></div>
-      <button type="submit" class="btn big full">Submit application <span class="arrow">→</span></button>
-      <p class="small">Your information is private. I personally read every application. You'll hear back within 1–2 business days if there's a fit.</p>
-    </form>
-  </div>
-</div></section>
-
-<section class="band" id="final"><div class="wrap">
+<section class="dark" id="final"><div class="wrap">
   <div class="final">
     <h2>Got a question before you apply?</h2>
     <p>Message me on WhatsApp directly. No funnel, no autoresponder, no team — just me.</p>
